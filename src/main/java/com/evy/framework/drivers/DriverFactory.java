@@ -61,7 +61,7 @@ public final class DriverFactory {
     public static final class ChromeDriverSupplier implements DriverSupplier {
         @Override
         public WebDriver getDriver() {
-            return WebDriverManager.chromedriver().capabilities(new ChromeOptions().addArguments("--headless")).create();
+            return WebDriverManager.chromedriver().create();
 
         }
     }
