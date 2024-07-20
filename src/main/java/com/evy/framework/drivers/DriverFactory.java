@@ -72,7 +72,7 @@ public final class DriverFactory {
     public static final class FirefoxDriverSupplier implements DriverSupplier {
         @Override
         public WebDriver getDriver() {
-            return WebDriverManager.firefoxdriver().capabilities(new FirefoxOptions().addArguments("--headless")).create();
+            return WebDriverManager.firefoxdriver().create();
         }
     }
 
@@ -82,7 +82,7 @@ public final class DriverFactory {
     public static final class EdgeDriverSupplier implements DriverSupplier {
         @Override
         public WebDriver getDriver() {
-            return WebDriverManager.edgedriver().capabilities(new EdgeOptions().addArguments("--headless")).create();
+            return WebDriverManager.edgedriver().create();
         }
     }
 
@@ -115,7 +115,7 @@ public final class DriverFactory {
     public static final class OperaDriverSupplier implements DriverSupplier {
         @Override
         public WebDriver getDriver() {
-            return WebDriverManager.operadriver().capabilities(new ChromeOptions().addArguments("--headless")).create();
+            return WebDriverManager.operadriver().create();
         }
     }
 }
