@@ -63,7 +63,12 @@ public final class DriverFactory {
         @Override
         public WebDriver getDriver() {
            WebDriverManager.chromedriver().setup();
-           return new ChromeDriver();
+           ChromeOptions options=new ChromeOptions();
+            options.addArguments("--headless");
+            options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--remote-debugging-port=9222");
+            return new ChromeDriver(options);
 
         }
     }
