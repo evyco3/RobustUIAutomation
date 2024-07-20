@@ -4,6 +4,7 @@ import com.evy.framework.constants.BrowserType;
 import com.evy.framework.utils.LoggerUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -61,7 +62,8 @@ public final class DriverFactory {
     public static final class ChromeDriverSupplier implements DriverSupplier {
         @Override
         public WebDriver getDriver() {
-            return WebDriverManager.chromedriver().create();
+           WebDriverManager.chromedriver().setup();
+           return new ChromeDriver();
 
         }
     }
