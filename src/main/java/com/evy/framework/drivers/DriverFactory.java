@@ -6,8 +6,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeOptions;
-import org.openqa.selenium.firefox.FirefoxOptions;
+
 
 import java.util.EnumMap;
 import java.util.Map;
@@ -62,14 +61,8 @@ public final class DriverFactory {
     public static final class ChromeDriverSupplier implements DriverSupplier {
         @Override
         public WebDriver getDriver() {
-            WebDriverManager.chromedriver().clearDriverCache().setup();
-            WebDriverManager.chromedriver().clearResolutionCache().setup();
-           ChromeOptions options=new ChromeOptions();
-            options.addArguments("--headless");
-            options.addArguments("--no-sandbox");
-            options.addArguments("--disable-dev-shm-usage");
-            options.addArguments("--remote-debugging-port=9222");
-            return new ChromeDriver(options);
+
+            return  WebDriverManager.chromedriver().capabilities(new ChromeOptions().addArguments("-headless")).create();
 
         }
     }

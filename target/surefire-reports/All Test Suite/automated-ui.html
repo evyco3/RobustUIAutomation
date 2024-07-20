@@ -1,0 +1,550 @@
+<html>
+<head>
+<title>TestNG:  automated-ui</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>automated-ui</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>59/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Jul 20 15:41:53 IDT 2024</td>
+</tr>
+<tr><td>Total time:</td><td>119 seconds (119414 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.evy.tests.ProductTest.testUserSetProductColor()'><b>testUserSetProductColor</b><br>Test class: com.evy.tests.ProductTest<br>Parameters: Black, You added</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[data-bind*=&apos;message.text&apos;]&quot;}
+  (Session info: chrome-headless-shell=126.0.6478.183)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f5e44bcb616f58449b883231d45e9c5, findElement {value=div[data-bind*=&apos;message.text&apos;], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\evyco\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54711}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54711/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f5e44bcb616f58449b883231d45e9c5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy58.getText(Unknown Source)
+	at com.evy.framework.pages.BasePage.getText(BasePage.java:53)
+	at com.evy.framework.pages.product.ProductPage.getSuccessAddToCartMsg(ProductPage.java:84)
+	at com.evy.tests.ProductTest.setProductColor(ProductTest.java:132)
+	at com.evy.tests.ProductTest.testUserSetProductColor(ProductTest.java:73)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace467805215", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace467805215'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[data-bind*=&apos;message.text&apos;]&quot;}
+  (Session info: chrome-headless-shell=126.0.6478.183)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f5e44bcb616f58449b883231d45e9c5, findElement {value=div[data-bind*=&apos;message.text&apos;], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\evyco\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54711}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54711/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f5e44bcb616f58449b883231d45e9c5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy58.getText(Unknown Source)
+	at com.evy.framework.pages.BasePage.getText(BasePage.java:53)
+	at com.evy.framework.pages.product.ProductPage.getSuccessAddToCartMsg(ProductPage.java:84)
+	at com.evy.tests.ProductTest.setProductColor(ProductTest.java:132)
+	at com.evy.tests.ProductTest.testUserSetProductColor(ProductTest.java:73)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>11</td>
+<td>com.evy.tests.ProductTest@d554c5f</td></tr>
+<tr>
+<td title='com.evy.tests.RegisterTest.testUserRegistrationScenarios()'><b>testUserRegistrationScenarios</b><br>Test class: com.evy.tests.RegisterTest<br>Parameters: Cammy, King, mignon.blanda@yahoo.com, Password123, Password123, valid register data, Thank you for registering with Main Website Store.</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome-headless-shell=126.0.6478.183)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [45646ed12118fc3e9cdf9a92c137b4ce, getElementText {id=f.D4C7F94356AC29DEED5C4FAD88AFC818.d.73F599FD2E9D7B864C6B3D134E7090E0.e.30}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\evyco\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54709}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54709/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome-headless-shell on windows (45646ed12118fc3e9cdf9a92c137b4ce)] -&gt; css selector: div[data-bind*=&apos;message.text&apos;]]
+Session ID: 45646ed12118fc3e9cdf9a92c137b4ce
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy58.getText(Unknown Source)
+	at com.evy.framework.pages.BasePage.getText(BasePage.java:53)
+	at com.evy.framework.pages.authentication.RegisterPage.getRegisterResponseMsg(RegisterPage.java:57)
+	at com.evy.tests.RegisterTest.registerAndGetResponseMsg(RegisterTest.java:64)
+	at com.evy.tests.RegisterTest.testUserRegistrationScenarios(RegisterTest.java:43)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1613896653", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1613896653'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome-headless-shell=126.0.6478.183)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [45646ed12118fc3e9cdf9a92c137b4ce, getElementText {id=f.D4C7F94356AC29DEED5C4FAD88AFC818.d.73F599FD2E9D7B864C6B3D134E7090E0.e.30}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\evyco\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54709}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54709/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome-headless-shell on windows (45646ed12118fc3e9cdf9a92c137b4ce)] -&gt; css selector: div[data-bind*=&apos;message.text&apos;]]
+Session ID: 45646ed12118fc3e9cdf9a92c137b4ce
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy58.getText(Unknown Source)
+	at com.evy.framework.pages.BasePage.getText(BasePage.java:53)
+	at com.evy.framework.pages.authentication.RegisterPage.getRegisterResponseMsg(RegisterPage.java:57)
+	at com.evy.tests.RegisterTest.registerAndGetResponseMsg(RegisterTest.java:64)
+	at com.evy.tests.RegisterTest.testUserRegistrationScenarios(RegisterTest.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>9</td>
+<td>com.evy.tests.RegisterTest@7fd50002</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.evy.tests.ProductSearchResultTest.testUserSelectProduct()'><b>testUserSelectProduct</b><br>Test class: com.evy.tests.ProductSearchResultTest<br>Parameters: Men, Tops, Jackets, Jupiter All-Weather Trainer, Jupiter All-Weather Trainer</td>
+<td></td>
+<td>3</td>
+<td>com.evy.tests.ProductSearchResultTest@68c9d179</td></tr>
+<tr>
+<td title='com.evy.tests.ProductTest.testUserSetProductColor()'><b>testUserSetProductColor</b><br>Test class: com.evy.tests.ProductTest<br>Parameters: Orange, You added</td>
+<td></td>
+<td>6</td>
+<td>com.evy.tests.ProductTest@d554c5f</td></tr>
+<tr>
+<td title='com.evy.tests.ProductSearchResultTest.testUserSelectProduct()'><b>testUserSelectProduct</b><br>Test class: com.evy.tests.ProductSearchResultTest<br>Parameters: Men, Tops, Jackets, Orion Two-Tone Fitted Jacket, Orion Two-Tone Fitted Jacket</td>
+<td></td>
+<td>2</td>
+<td>com.evy.tests.ProductSearchResultTest@68c9d179</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Gear, Watches, , /gear/watches.html</td>
+<td></td>
+<td>1</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.ProductSearchResultTest.testUserSelectProduct()'><b>testUserSelectProduct</b><br>Test class: com.evy.tests.ProductSearchResultTest<br>Parameters: Men, Tops, Jackets, Lando Gym Jacket, Lando Gym Jacket</td>
+<td></td>
+<td>2</td>
+<td>com.evy.tests.ProductSearchResultTest@68c9d179</td></tr>
+<tr>
+<td title='com.evy.tests.ProductTest.testUserSetProductSize()'><b>testUserSetProductSize</b><br>Test class: com.evy.tests.ProductTest<br>Parameters: XL, You added</td>
+<td></td>
+<td>4</td>
+<td>com.evy.tests.ProductTest@d554c5f</td></tr>
+<tr>
+<td title='com.evy.tests.EndToEndTest.testUserEnd2EndJourney()'><b>testUserEnd2EndJourney</b><br>Test class: com.evy.tests.EndToEndTest<br>Parameters: John, Doe, randall.heaney@yahoo.com, Password123, Israel, 123 Main St, Tel Aviv, 12345, 0501234567</td>
+<td></td>
+<td>22</td>
+<td>com.evy.tests.EndToEndTest@15888343</td></tr>
+<tr>
+<td title='com.evy.tests.ProductSearchResultTest.testUserSelectProduct()'><b>testUserSelectProduct</b><br>Test class: com.evy.tests.ProductSearchResultTest<br>Parameters: Men, Tops, Jackets, Hyperion Elements Jacket, Hyperion Elements Jacket</td>
+<td></td>
+<td>2</td>
+<td>com.evy.tests.ProductSearchResultTest@68c9d179</td></tr>
+<tr>
+<td title='com.evy.tests.LoginTest.testUserLoginScenarios()'><b>testUserLoginScenarios</b><br>Test class: com.evy.tests.LoginTest<br>Parameters: wrongEmail@gmail.com, Password123, invalid login data</td>
+<td></td>
+<td>5</td>
+<td>com.evy.tests.LoginTest@4b8d604b</td></tr>
+<tr>
+<td title='com.evy.tests.LoginTest.testUserLoginScenarios()'><b>testUserLoginScenarios</b><br>Test class: com.evy.tests.LoginTest<br>Parameters: , , invalid missing data</td>
+<td></td>
+<td>1</td>
+<td>com.evy.tests.LoginTest@4b8d604b</td></tr>
+<tr>
+<td title='com.evy.tests.RegisterTest.testUserRegistrationScenarios()'><b>testUserRegistrationScenarios</b><br>Test class: com.evy.tests.RegisterTest<br>Parameters: Annamaria, Koepp, mario.mayert@yahoo.com, Password, Password, invalid passwords format data, Minimum of different classes of characters in password is 3. Classes of characters: Lower Case, Upper Case, Digits, Special Characters.</td>
+<td></td>
+<td>2</td>
+<td>com.evy.tests.RegisterTest@7fd50002</td></tr>
+<tr>
+<td title='com.evy.tests.ProductSearchResultTest.testUserSelectProduct()'><b>testUserSelectProduct</b><br>Test class: com.evy.tests.ProductSearchResultTest<br>Parameters: Men, Tops, Jackets, Montana Wind Jacket, Montana Wind Jacket</td>
+<td></td>
+<td>3</td>
+<td>com.evy.tests.ProductSearchResultTest@68c9d179</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Women, Tops, , /women/tops-women.html</td>
+<td></td>
+<td>2</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.ProductTest.testUserSetProductSize()'><b>testUserSetProductSize</b><br>Test class: com.evy.tests.ProductTest<br>Parameters: XS, You added</td>
+<td></td>
+<td>6</td>
+<td>com.evy.tests.ProductTest@d554c5f</td></tr>
+<tr>
+<td title='com.evy.tests.ProductSearchResultTest.testUserSelectProduct()'><b>testUserSelectProduct</b><br>Test class: com.evy.tests.ProductSearchResultTest<br>Parameters: Men, Tops, Jackets, Proteus Fitness Jackshirt, Proteus Fitness Jackshirt</td>
+<td></td>
+<td>3</td>
+<td>com.evy.tests.ProductSearchResultTest@68c9d179</td></tr>
+<tr>
+<td title='com.evy.tests.RegisterTest.testUserRegistrationScenarios()'><b>testUserRegistrationScenarios</b><br>Test class: com.evy.tests.RegisterTest<br>Parameters: Tammy, Gutmann, evy@, Password123, Password123, invalid email format data, Please enter a valid email address (Ex: johndoe@domain.com).</td>
+<td></td>
+<td>4</td>
+<td>com.evy.tests.RegisterTest@7fd50002</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Men, Tops, Jackets, /men/tops-men/jackets-men.html</td>
+<td></td>
+<td>1</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Men, Tops, Tanks, /men/tops-men/tanks-men.html</td>
+<td></td>
+<td>1</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Women, Tops, Hoodies & Sweatshirts, women/tops-women/hoodies-and-sweatshirts-women.html</td>
+<td></td>
+<td>1</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Men, Tops, Tees, /men/tops-men/tees-men.html</td>
+<td></td>
+<td>1</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Men, Bottoms, Shorts, /men/bottoms-men/shorts-men.html</td>
+<td></td>
+<td>1</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Sale, , , /sale.html</td>
+<td></td>
+<td>1</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Men, Tops, , /men/tops-men.html</td>
+<td></td>
+<td>1</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.ProductTest.testUserSetProductSize()'><b>testUserSetProductSize</b><br>Test class: com.evy.tests.ProductTest<br>Parameters: M, You added</td>
+<td></td>
+<td>6</td>
+<td>com.evy.tests.ProductTest@d554c5f</td></tr>
+<tr>
+<td title='com.evy.tests.ProductTest.testUserSetProductQuantity()'><b>testUserSetProductQuantity</b><br>Test class: com.evy.tests.ProductTest<br>Parameters: -1, invalid quantity, Please enter a quantity greater than 0.</td>
+<td></td>
+<td>3</td>
+<td>com.evy.tests.ProductTest@d554c5f</td></tr>
+<tr>
+<td title='com.evy.tests.ProductSearchResultTest.testUserSelectProduct()'><b>testUserSelectProduct</b><br>Test class: com.evy.tests.ProductSearchResultTest<br>Parameters: Men, Tops, Jackets, Taurus Elements Shell, Taurus Elements Shell</td>
+<td></td>
+<td>3</td>
+<td>com.evy.tests.ProductSearchResultTest@68c9d179</td></tr>
+<tr>
+<td title='com.evy.tests.LoginTest.testUserLoginScenarios()'><b>testUserLoginScenarios</b><br>Test class: com.evy.tests.LoginTest<br>Parameters: evyuser@example.com, wrongPassword, invalid login data</td>
+<td></td>
+<td>5</td>
+<td>com.evy.tests.LoginTest@4b8d604b</td></tr>
+<tr>
+<td title='com.evy.tests.LoginTest.testUserLoginScenarios()'><b>testUserLoginScenarios</b><br>Test class: com.evy.tests.LoginTest<br>Parameters: , Password123, invalid missing data</td>
+<td></td>
+<td>2</td>
+<td>com.evy.tests.LoginTest@4b8d604b</td></tr>
+<tr>
+<td title='com.evy.tests.RegisterTest.testUserRegistrationScenarios()'><b>testUserRegistrationScenarios</b><br>Test class: com.evy.tests.RegisterTest<br>Parameters: Maurice, Parisian, stan.dooley@gmail.com, password1, password2, invalid passwords mismatch data, Please enter the same value again.</td>
+<td></td>
+<td>4</td>
+<td>com.evy.tests.RegisterTest@7fd50002</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Women, Bottoms, Shorts, /women/bottoms-women/shorts-women.html</td>
+<td></td>
+<td>2</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Men, , , /men.html</td>
+<td></td>
+<td>1</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.LoginTest.testUserLoginScenarios()'><b>testUserLoginScenarios</b><br>Test class: com.evy.tests.LoginTest<br>Parameters: evy@user@example.com, , invalid missing data</td>
+<td></td>
+<td>3</td>
+<td>com.evy.tests.LoginTest@4b8d604b</td></tr>
+<tr>
+<td title='com.evy.tests.ProductTest.testUserSetProductSize()'><b>testUserSetProductSize</b><br>Test class: com.evy.tests.ProductTest<br>Parameters: L, You added</td>
+<td></td>
+<td>5</td>
+<td>com.evy.tests.ProductTest@d554c5f</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Women, , , /women.html</td>
+<td></td>
+<td>1</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Men, Bottoms, Pants, /men/bottoms-men/pants-men.html</td>
+<td></td>
+<td>1</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Women, Bottoms, , /women/bottoms-women.html</td>
+<td></td>
+<td>2</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Gear, Fitness Equipment, , /gear/fitness-equipment.html</td>
+<td></td>
+<td>1</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.CartTest.testUserDeleteProductFromCart()'><b>testUserDeleteProductFromCart</b><br>Test class: com.evy.tests.CartTest</td>
+<td></td>
+<td>8</td>
+<td>com.evy.tests.CartTest@2dfaea86</td></tr>
+<tr>
+<td title='com.evy.tests.ProductSearchResultTest.testUserSelectProduct()'><b>testUserSelectProduct</b><br>Test class: com.evy.tests.ProductSearchResultTest<br>Parameters: Men, Tops, Jackets, Beaumont Summit Kit, Beaumont Summit Kit</td>
+<td></td>
+<td>2</td>
+<td>com.evy.tests.ProductSearchResultTest@68c9d179</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Gear, , , /gear.html</td>
+<td></td>
+<td>0</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Women, Bottoms, Pants, /women/bottoms-women/pants-women.html</td>
+<td></td>
+<td>2</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.RegisterTest.testUserRegistrationScenarios()'><b>testUserRegistrationScenarios</b><br>Test class: com.evy.tests.RegisterTest<br>Parameters: Rosemarie, Mueller, evy@example.org, Password123, Password123, invalid email in use data, There is already an account with this email address. If you are sure that it is your email address, click here to get your password and access your account.</td>
+<td></td>
+<td>5</td>
+<td>com.evy.tests.RegisterTest@7fd50002</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Men, Tops, Hoodies & Sweatshirts, /men/tops-men/hoodies-and-sweatshirts-men.html</td>
+<td></td>
+<td>1</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Training, Video Download, , /training/training-video.html</td>
+<td></td>
+<td>0</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Training, , , /training.html</td>
+<td></td>
+<td>2</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Women, Tops, Bras & Tanks, /women/tops-women/tanks-women.html</td>
+<td></td>
+<td>1</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Women, Tops, Jackets, /women/tops-women/jackets-women.html</td>
+<td></td>
+<td>1</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.ProductTest.testUserSetProductColor()'><b>testUserSetProductColor</b><br>Test class: com.evy.tests.ProductTest<br>Parameters: Blue, You added</td>
+<td></td>
+<td>8</td>
+<td>com.evy.tests.ProductTest@d554c5f</td></tr>
+<tr>
+<td title='com.evy.tests.ProductTest.testUserSetProductSize()'><b>testUserSetProductSize</b><br>Test class: com.evy.tests.ProductTest<br>Parameters: S, You added</td>
+<td></td>
+<td>7</td>
+<td>com.evy.tests.ProductTest@d554c5f</td></tr>
+<tr>
+<td title='com.evy.tests.CartTest.testAddProductToCart()'><b>testAddProductToCart</b><br>Test class: com.evy.tests.CartTest</td>
+<td></td>
+<td>5</td>
+<td>com.evy.tests.CartTest@2dfaea86</td></tr>
+<tr>
+<td title='com.evy.tests.ProductTest.testUserSetProductQuantity()'><b>testUserSetProductQuantity</b><br>Test class: com.evy.tests.ProductTest<br>Parameters: 1, valid quantity, You added</td>
+<td></td>
+<td>7</td>
+<td>com.evy.tests.ProductTest@d554c5f</td></tr>
+<tr>
+<td title='com.evy.tests.ProductTest.testUserSetProductQuantity()'><b>testUserSetProductQuantity</b><br>Test class: com.evy.tests.ProductTest<br>Parameters: 0, invalid quantity, Please enter a quantity greater than 0.</td>
+<td></td>
+<td>5</td>
+<td>com.evy.tests.ProductTest@d554c5f</td></tr>
+<tr>
+<td title='com.evy.tests.LoginTest.testUserLoginScenarios()'><b>testUserLoginScenarios</b><br>Test class: com.evy.tests.LoginTest<br>Parameters: evyuser@example.com, Password123, valid login data</td>
+<td></td>
+<td>4</td>
+<td>com.evy.tests.LoginTest@4b8d604b</td></tr>
+<tr>
+<td title='com.evy.tests.ProductSearchResultTest.testUserSelectProduct()'><b>testUserSelectProduct</b><br>Test class: com.evy.tests.ProductSearchResultTest<br>Parameters: Men, Tops, Jackets, Typhon Performance Fleece-lined Jacket, Typhon Performance Fleece-lined Jacket</td>
+<td></td>
+<td>2</td>
+<td>com.evy.tests.ProductSearchResultTest@68c9d179</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Gear, Bags, , /gear/bags.html</td>
+<td></td>
+<td>1</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.ProductSearchResultTest.testUserSelectProduct()'><b>testUserSelectProduct</b><br>Test class: com.evy.tests.ProductSearchResultTest<br>Parameters: Men, Tops, Jackets, Kenobi Trail Jacket, Kenobi Trail Jacket</td>
+<td></td>
+<td>2</td>
+<td>com.evy.tests.ProductSearchResultTest@68c9d179</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Men, Bottoms, , /men/bottoms-men.html</td>
+<td></td>
+<td>0</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+<tr>
+<td title='com.evy.tests.ProductSearchResultTest.testUserSelectProduct()'><b>testUserSelectProduct</b><br>Test class: com.evy.tests.ProductSearchResultTest<br>Parameters: Men, Tops, Jackets, Mars HeatTech™ Pullover, Mars HeatTech™ Pullover</td>
+<td></td>
+<td>2</td>
+<td>com.evy.tests.ProductSearchResultTest@68c9d179</td></tr>
+<tr>
+<td title='com.evy.tests.ProductDropdownTest.testUserSelectCategoriesFromProductDropdown()'><b>testUserSelectCategoriesFromProductDropdown</b><br>Test class: com.evy.tests.ProductDropdownTest<br>Parameters: Women, Tops, Tees, /women/tops-women/tees-women.html</td>
+<td></td>
+<td>1</td>
+<td>com.evy.tests.ProductDropdownTest@5e7cd6cc</td></tr>
+</table><p>
+</body>
+</html>

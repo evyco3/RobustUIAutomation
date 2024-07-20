@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="120.129" tests="61" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\evyco\.cache\selenium\chromedriver\win64\126.0.6478.182\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\evyco\IdeaProjects\RobustUIAutomated\target\test-classes;C:\Users\evyco\IdeaProjects\RobustUIAutomated\target\classes;C:\Users\evyco\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.1\webdrivermanager-5.9.1.jar;C:\Users\evyco\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\evyco\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\evyco\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\evyco\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\evyco\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\evyco\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\evyco\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\evyco\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\evyco\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\evyco\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\evyco\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\evyco\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\evyco\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\evyco\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\evyco\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\evyco\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\evyco\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\evyco\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\evyco\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\evyco\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\evyco\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-java\4.22.0\selenium-java-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-api\4.22.0\selenium-api-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.22.0\selenium-chrome-driver-4.22.0.jar;C:\Users\evyco\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.22.0\selenium-chromium-driver-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-json\4.22.0\selenium-json-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.22.0\selenium-manager-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.22.0\selenium-devtools-v124-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.22.0\selenium-devtools-v125-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v126\4.22.0\selenium-devtools-v126-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.22.0\selenium-devtools-v85-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.22.0\selenium-edge-driver-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.22.0\selenium-firefox-driver-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-http\4.22.0\selenium-http-4.22.0.jar;C:\Users\evyco\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.22.0\selenium-ie-driver-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.22.0\selenium-remote-driver-4.22.0.jar;C:\Users\evyco\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\evyco\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\evyco\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\evyco\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\evyco\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\evyco\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-api\1.39.0\opentelemetry-api-1.39.0.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-context\1.39.0\opentelemetry-context-1.39.0.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.39.0\opentelemetry-exporter-logging-1.39.0.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.39.0\opentelemetry-sdk-common-1.39.0.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.39.0\opentelemetry-sdk-extension-autoconfigure-spi-1.39.0.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.39.0\opentelemetry-sdk-extension-autoconfigure-1.39.0.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.39.0-alpha\opentelemetry-api-incubator-1.39.0-alpha.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.39.0\opentelemetry-sdk-trace-1.39.0.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.39.0\opentelemetry-sdk-1.39.0.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.39.0\opentelemetry-sdk-metrics-1.39.0.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.39.0\opentelemetry-sdk-logs-1.39.0.jar;C:\Users\evyco\.m2\repository\net\bytebuddy\byte-buddy\1.14.17\byte-buddy-1.14.17.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-os\4.22.0\selenium-os-4.22.0.jar;C:\Users\evyco\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.22.0\selenium-safari-driver-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-support\4.22.0\selenium-support-4.22.0.jar;C:\Users\evyco\.m2\repository\org\aeonbits\owner\owner\1.0.12\owner-1.0.12.jar;C:\Users\evyco\.m2\repository\org\apache\logging\log4j\log4j-core\3.0.0-beta2\log4j-core-3.0.0-beta2.jar;C:\Users\evyco\.m2\repository\org\apache\logging\log4j\log4j-api\3.0.0-beta2\log4j-api-3.0.0-beta2.jar;C:\Users\evyco\.m2\repository\org\apache\logging\log4j\log4j-plugins\3.0.0-beta2\log4j-plugins-3.0.0-beta2.jar;C:\Users\evyco\.m2\repository\io\qameta\allure\allure-java-commons\2.28.0\allure-java-commons-2.28.0.jar;C:\Users\evyco\.m2\repository\io\qameta\allure\allure-model\2.28.0\allure-model-2.28.0.jar;C:\Users\evyco\.m2\repository\io\qameta\allure\allure-testng\2.21.0\allure-testng-2.21.0.jar;C:\Users\evyco\.m2\repository\io\qameta\allure\allure-test-filter\2.21.0\allure-test-filter-2.21.0.jar;C:\Users\evyco\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\evyco\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\evyco\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\evyco\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\evyco\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\evyco\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\evyco\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Jerusalem"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="allure.link.issue.pattern" value="https://example.org/issue/{}"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\OpenJDK\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\evyco\AppData\Local\Temp\surefire820912597744353652\surefirebooter-20240720154152437_3.jar C:\Users\evyco\AppData\Local\Temp\surefire820912597744353652 2024-07-20T15-41-52_216-jvmRun1 surefire-20240720154152437_1tmp surefire_0-20240720154152437_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\evyco\IdeaProjects\RobustUIAutomated\target\test-classes;C:\Users\evyco\IdeaProjects\RobustUIAutomated\target\classes;C:\Users\evyco\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.1\webdrivermanager-5.9.1.jar;C:\Users\evyco\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\evyco\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\evyco\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\evyco\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\evyco\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\evyco\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\evyco\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\evyco\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\evyco\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\evyco\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\evyco\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\evyco\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\evyco\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\evyco\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\evyco\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\evyco\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\evyco\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\evyco\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\evyco\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\evyco\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\evyco\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-java\4.22.0\selenium-java-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-api\4.22.0\selenium-api-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.22.0\selenium-chrome-driver-4.22.0.jar;C:\Users\evyco\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.22.0\selenium-chromium-driver-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-json\4.22.0\selenium-json-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.22.0\selenium-manager-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.22.0\selenium-devtools-v124-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.22.0\selenium-devtools-v125-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v126\4.22.0\selenium-devtools-v126-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.22.0\selenium-devtools-v85-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.22.0\selenium-edge-driver-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.22.0\selenium-firefox-driver-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-http\4.22.0\selenium-http-4.22.0.jar;C:\Users\evyco\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.22.0\selenium-ie-driver-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.22.0\selenium-remote-driver-4.22.0.jar;C:\Users\evyco\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\evyco\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\evyco\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\evyco\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\evyco\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\evyco\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-api\1.39.0\opentelemetry-api-1.39.0.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-context\1.39.0\opentelemetry-context-1.39.0.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.39.0\opentelemetry-exporter-logging-1.39.0.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.39.0\opentelemetry-sdk-common-1.39.0.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.39.0\opentelemetry-sdk-extension-autoconfigure-spi-1.39.0.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.39.0\opentelemetry-sdk-extension-autoconfigure-1.39.0.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.39.0-alpha\opentelemetry-api-incubator-1.39.0-alpha.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.39.0\opentelemetry-sdk-trace-1.39.0.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.39.0\opentelemetry-sdk-1.39.0.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.39.0\opentelemetry-sdk-metrics-1.39.0.jar;C:\Users\evyco\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.39.0\opentelemetry-sdk-logs-1.39.0.jar;C:\Users\evyco\.m2\repository\net\bytebuddy\byte-buddy\1.14.17\byte-buddy-1.14.17.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-os\4.22.0\selenium-os-4.22.0.jar;C:\Users\evyco\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.22.0\selenium-safari-driver-4.22.0.jar;C:\Users\evyco\.m2\repository\org\seleniumhq\selenium\selenium-support\4.22.0\selenium-support-4.22.0.jar;C:\Users\evyco\.m2\repository\org\aeonbits\owner\owner\1.0.12\owner-1.0.12.jar;C:\Users\evyco\.m2\repository\org\apache\logging\log4j\log4j-core\3.0.0-beta2\log4j-core-3.0.0-beta2.jar;C:\Users\evyco\.m2\repository\org\apache\logging\log4j\log4j-api\3.0.0-beta2\log4j-api-3.0.0-beta2.jar;C:\Users\evyco\.m2\repository\org\apache\logging\log4j\log4j-plugins\3.0.0-beta2\log4j-plugins-3.0.0-beta2.jar;C:\Users\evyco\.m2\repository\io\qameta\allure\allure-java-commons\2.28.0\allure-java-commons-2.28.0.jar;C:\Users\evyco\.m2\repository\io\qameta\allure\allure-model\2.28.0\allure-model-2.28.0.jar;C:\Users\evyco\.m2\repository\io\qameta\allure\allure-testng\2.21.0\allure-testng-2.21.0.jar;C:\Users\evyco\.m2\repository\io\qameta\allure\allure-test-filter\2.21.0\allure-test-filter-2.21.0.jar;C:\Users\evyco\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\evyco\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\evyco\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\evyco\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\evyco\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\evyco\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\evyco\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;"/>
+    <property name="allure.results.directory" value="C:\Users\evyco\IdeaProjects\RobustUIAutomated\target/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\evyco"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-09-19"/>
+    <property name="java.home" value="C:\Program Files\OpenJDK\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="allure.link.tms.pattern" value="https://example.org/tms/{}"/>
+    <property name="basedir" value="C:\Users\evyco\IdeaProjects\RobustUIAutomated"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\evyco\AppData\Local\Temp\surefire820912597744353652\surefirebooter-20240720154152437_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21+35-2513"/>
+    <property name="user.name" value="evyco"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\evyco\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\evyco\AppData\Local\Temp\"/>
+    <property name="java.version" value="21"/>
+    <property name="user.dir" value="C:\Users\evyco\IdeaProjects\RobustUIAutomated"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\OpenJDK\jdk-21\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.8\bin;C:\Program Files\OpenJDK\jdk-21\bin;C:\Users\evyco\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21+35-2513"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Women, , , /women.html](1)" classname="com.evy.tests.ProductDropdownTest" time="1.189">
+    <system-out><![CDATA[2024-07-20 15:41:56 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:41:56 [TestNG-test-automated-ui-1] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:41:56 [TestNG-test-automated-ui-7] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:41:56 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:41:56 [TestNG-test-automated-ui-5] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:41:56 [TestNG-test-automated-ui-2] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:41:56 [TestNG-test-automated-ui-6] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:01 [TestNG-test-automated-ui-6] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:01 [TestNG-test-automated-ui-1] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:01 [TestNG-test-automated-ui-2] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:01 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:01 [TestNG-test-automated-ui-1] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserRegistrationScenariosTest Start
+2024-07-20 15:42:01 [TestNG-test-automated-ui-6] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSetProductQuantityTest Start
+2024-07-20 15:42:01 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:42:01 [TestNG-test-automated-ui-2] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserLoginScenariosTest Start
+2024-07-20 15:42:02 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:02 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:02 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectProductTest Start
+2024-07-20 15:42:02 [TestNG-test-automated-ui-7] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:02 [TestNG-test-automated-ui-7] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSetProductSizeTest Start
+2024-07-20 15:42:02 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:02 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:02 [TestNG-test-automated-ui-5] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:02 [TestNG-test-automated-ui-5] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSetProductColorTest Start
+2024-07-20 15:42:02 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on registerLink
+2024-07-20 15:42:02 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:02 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Page Title :Create New Customer Account
+2024-07-20 15:42:02 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on registerLink,Navigate to+RegisterPage
+2024-07-20 15:42:03 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on loginLink
+2024-07-20 15:42:03 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Women
+2024-07-20 15:42:03 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:03 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:03 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Page Title :Customer Login
+2024-07-20 15:42:03 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on loginLink,Navigate to+LoginPage
+2024-07-20 15:42:03 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Women
+2024-07-20 15:42:03 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to firstName:Cammy
+2024-07-20 15:42:03 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:03 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/women.html
+2024-07-20 15:42:03 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:42:03 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+2024-07-20 15:42:03 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:03 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - Send keys to email:evyuser@example.com
+2024-07-20 15:42:03 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to lastName:King
+2024-07-20 15:42:03 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - Send keys to password:Password123
+2024-07-20 15:42:03 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to email:mignon.blanda@yahoo.com
+2024-07-20 15:42:03 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to password:Password123
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Men, , , /men.html](2)" classname="com.evy.tests.ProductDropdownTest" time="1.411">
+    <system-out><![CDATA[2024-07-20 15:42:06 [TestNG-test-automated-ui-2] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:06 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:07 [TestNG-test-automated-ui-2] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:07 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:07 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:42:08 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Men
+2024-07-20 15:42:08 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Men
+2024-07-20 15:42:08 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/men.html
+2024-07-20 15:42:08 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:42:08 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Gear, , , /gear.html](3)" classname="com.evy.tests.ProductDropdownTest" time="0.988">
+    <system-out><![CDATA[2024-07-20 15:42:11 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on loginLink
+2024-07-20 15:42:11 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Page Title :Customer Login
+2024-07-20 15:42:11 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on loginLink,Navigate to+LoginPage
+2024-07-20 15:42:11 [TestNG-test-automated-ui-1] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:11 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:11 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - Send keys to email:wrongEmail@gmail.com
+2024-07-20 15:42:12 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:12 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - Send keys to password:Password123
+2024-07-20 15:42:12 [TestNG-test-automated-ui-7] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:12 [TestNG-test-automated-ui-7] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSetProductSizeTest Start
+2024-07-20 15:42:12 [TestNG-test-automated-ui-6] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:12 [TestNG-test-automated-ui-6] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSetProductQuantityTest Start
+2024-07-20 15:42:12 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:12 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:42:12 [TestNG-test-automated-ui-1] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:12 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:12 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:12 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:12 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:13 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Montana Wind Jacket
+2024-07-20 15:42:13 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Gear
+2024-07-20 15:42:13 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Gear
+2024-07-20 15:42:13 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Montana Wind Jacket
+2024-07-20 15:42:13 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Montana Wind Jacket,Navigate to+ProductPage
+2024-07-20 15:42:13 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/gear.html
+2024-07-20 15:42:13 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:42:13 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Training, , , /training.html](4)" classname="com.evy.tests.ProductDropdownTest" time="0.631">
+    <system-out><![CDATA[2024-07-20 15:42:18 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Training
+2024-07-20 15:42:18 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Training
+2024-07-20 15:42:18 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:18 [TestNG-test-automated-ui-6] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:18 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/training.html
+2024-07-20 15:42:18 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:42:18 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Sale, , , /sale.html](5)" classname="com.evy.tests.ProductDropdownTest" time="0.222">
+    <system-out><![CDATA[2024-07-20 15:42:21 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Clicked on M
+2024-07-20 15:42:21 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:21 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:42:21 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - Send keys to email:evyuser@example.com
+2024-07-20 15:42:21 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:21 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Send keys to productQuantity:1
+2024-07-20 15:42:22 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - Send keys to password:wrongPassword
+2024-07-20 15:42:22 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Clicked on Blue
+2024-07-20 15:42:22 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Clicked on addToCartBtn
+2024-07-20 15:42:22 [TestNG-test-automated-ui-6] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:22 [TestNG-test-automated-ui-6] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSetProductQuantityTest Start
+2024-07-20 15:42:22 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:22 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:22 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:22 [TestNG-test-automated-ui-7] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:22 [TestNG-test-automated-ui-7] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSetProductSizeTest Start
+2024-07-20 15:42:23 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Sale
+2024-07-20 15:42:23 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Sale
+2024-07-20 15:42:23 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/sale.html
+2024-07-20 15:42:23 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:42:23 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Women, Tops, , /women/tops-women.html](6)" classname="com.evy.tests.ProductDropdownTest" time="1.979">
+    <system-out><![CDATA[2024-07-20 15:42:26 [TestNG-test-automated-ui-5] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:26 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to password:Password123
+2024-07-20 15:42:26 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Send keys to productQuantity:1
+2024-07-20 15:42:26 [TestNG-test-automated-ui-2] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:26 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Clicked on Black
+2024-07-20 15:42:26 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Clicked on M
+2024-07-20 15:42:26 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to confirmation:Password123
+2024-07-20 15:42:26 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Women
+2024-07-20 15:42:26 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Clicked on addToCartBtn
+2024-07-20 15:42:26 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:26 [TestNG-test-automated-ui-6] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:26 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:27 [TestNG-test-automated-ui-5] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:27 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Tops
+2024-07-20 15:42:27 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Tops - Women
+2024-07-20 15:42:27 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/women/tops-women.html
+2024-07-20 15:42:27 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:42:27 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Women, Bottoms, , /women/bottoms-women.html](7)" classname="com.evy.tests.ProductDropdownTest" time="0.711">
+    <system-out><![CDATA[2024-07-20 15:42:31 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:31 [TestNG-test-automated-ui-2] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:31 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:31 [TestNG-test-automated-ui-1] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:31 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectProductTest Start
+2024-07-20 15:42:31 [TestNG-test-automated-ui-1] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserRegistrationScenariosTest Start
+2024-07-20 15:42:32 [TestNG-test-automated-ui-7] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:32 [TestNG-test-automated-ui-7] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSetProductSizeTest Start
+2024-07-20 15:42:32 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:32 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:32 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:32 [TestNG-test-automated-ui-2] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:32 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:32 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt
+2024-07-20 15:42:32 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Bottoms
+2024-07-20 15:42:32 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Proteus Fitness Jackshirt
+2024-07-20 15:42:32 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt,Navigate to+ProductPage
+2024-07-20 15:42:32 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt
+2024-07-20 15:42:32 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Bottoms - Women
+2024-07-20 15:42:32 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Proteus Fitness Jackshirt
+2024-07-20 15:42:32 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt,Navigate to+ProductPage
+2024-07-20 15:42:32 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Clicked on M
+2024-07-20 15:42:32 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/women/bottoms-women.html
+2024-07-20 15:42:32 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:42:32 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Men, Tops, , /men/tops-men.html](8)" classname="com.evy.tests.ProductDropdownTest" time="0.558">
+    <system-out><![CDATA[2024-07-20 15:42:37 [TestNG-test-automated-ui-7] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:37 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:37 [TestNG-test-automated-ui-2] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:37 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectProductTest Start
+2024-07-20 15:42:37 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Tops
+2024-07-20 15:42:38 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Tops - Men
+2024-07-20 15:42:38 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:38 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/men/tops-men.html
+2024-07-20 15:42:38 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:42:38 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Men, Bottoms, , /men/bottoms-men.html](9)" classname="com.evy.tests.ProductDropdownTest" time="0.983">
+    <system-out><![CDATA[2024-07-20 15:42:41 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to password:Password123
+2024-07-20 15:42:41 [TestNG-test-automated-ui-2] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:41 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to confirmation:Password123
+2024-07-20 15:42:41 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:41 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:42:41 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:41 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:41 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt
+2024-07-20 15:42:41 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Proteus Fitness Jackshirt
+2024-07-20 15:42:41 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt,Navigate to+ProductPage
+2024-07-20 15:42:42 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Clicked on Black
+2024-07-20 15:42:42 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:42 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:42 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Send keys to productQuantity:1
+2024-07-20 15:42:42 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Clicked on M
+2024-07-20 15:42:42 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Clicked on addToCartBtn
+2024-07-20 15:42:42 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Bottoms
+2024-07-20 15:42:42 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Bottoms - Men
+2024-07-20 15:42:42 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/men/bottoms-men.html
+2024-07-20 15:42:42 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:42:42 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Gear, Bags, , /gear/bags.html](10)" classname="com.evy.tests.ProductDropdownTest" time="1.214">
+    <system-out><![CDATA[2024-07-20 15:42:46 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/gear/bags.html
+2024-07-20 15:42:46 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:42:46 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Gear, Fitness Equipment, , /gear/fitness-equipment.html](11)" classname="com.evy.tests.ProductDropdownTest" time="1.182">
+    <system-out><![CDATA[2024-07-20 15:42:47 [TestNG-test-automated-ui-5] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:47 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt
+2024-07-20 15:42:47 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Proteus Fitness Jackshirt
+2024-07-20 15:42:47 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt,Navigate to+ProductPage
+2024-07-20 15:42:48 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Clicked on M
+2024-07-20 15:42:48 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Clicked on Black
+2024-07-20 15:42:48 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Send keys to productQuantity:1
+2024-07-20 15:42:48 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Clicked on addToCartBtn
+2024-07-20 15:42:49 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:49 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectProductTest Start
+2024-07-20 15:42:49 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:49 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:49 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:42:49 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:49 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Gear
+2024-07-20 15:42:50 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:50 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:50 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Fitness Equipment
+2024-07-20 15:42:50 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Fitness Equipment - Gear
+2024-07-20 15:42:50 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/gear/fitness-equipment.html
+2024-07-20 15:42:50 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:42:50 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Gear, Watches, , /gear/watches.html](12)" classname="com.evy.tests.ProductDropdownTest" time="0.286">
+    <system-out><![CDATA[2024-07-20 15:42:51 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:52 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Clicked on cart view btn
+2024-07-20 15:42:52 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Page Title :Shopping Cart
+2024-07-20 15:42:52 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:53 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:53 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:42:53 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Gear
+2024-07-20 15:42:54 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:54 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectProductTest Start
+2024-07-20 15:42:54 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.checkout.CartPage - Clicked on navigate to checkout btn
+2024-07-20 15:42:54 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.checkout.CartPage - Page Title :Checkout
+2024-07-20 15:42:54 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Watches
+2024-07-20 15:42:54 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Watches - Gear
+2024-07-20 15:42:54 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:54 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/gear/watches.html
+2024-07-20 15:42:54 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:42:54 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Training, Video Download, , /training/training-video.html](13)" classname="com.evy.tests.ProductDropdownTest" time="0.945">
+    <system-out><![CDATA[2024-07-20 15:42:56 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:57 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:57 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:42:57 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Training
+2024-07-20 15:42:57 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:57 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.checkout.PaymentPage - Clicked on placeOrderBtn
+2024-07-20 15:42:58 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Video Download
+2024-07-20 15:42:58 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Video Download - Training
+2024-07-20 15:42:58 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/training/training-video.html
+2024-07-20 15:42:58 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:42:58 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Women, Tops, Jackets, /women/tops-women/jackets-women.html](14)" classname="com.evy.tests.ProductDropdownTest" time="1.417">
+    <system-out><![CDATA[2024-07-20 15:42:58 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:58 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:43:00 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:43:00 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:43:00 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:43:00 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectProductTest Start
+2024-07-20 15:43:00 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:43:00 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Women
+2024-07-20 15:43:00 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:43:00 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:43:01 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:43:01 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:43:01 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:43:01 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Women
+2024-07-20 15:43:01 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/women/tops-women/jackets-women.html
+2024-07-20 15:43:01 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:43:01 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Women, Tops, Hoodies &amp; Sweatshirts, women/tops-women/hoodies-and-sweatshirts-women.html](15)" classname="com.evy.tests.ProductDropdownTest" time="0.732">
+    <system-out><![CDATA[2024-07-20 15:43:02 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:43:03 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:43:04 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:43:05 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:43:05 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Women
+2024-07-20 15:43:05 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:43:05 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:43:05 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectProductTest Start
+2024-07-20 15:43:05 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:43:05 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:43:06 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Hoodies & Sweatshirts
+2024-07-20 15:43:06 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Hoodies & Sweatshirts - Tops - Women
+2024-07-20 15:43:06 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/women/tops-women/hoodies-and-sweatshirts-women.html
+2024-07-20 15:43:06 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:43:06 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Women, Tops, Tees, /women/tops-women/tees-women.html](16)" classname="com.evy.tests.ProductDropdownTest" time="1.546">
+    <system-out><![CDATA[2024-07-20 15:43:08 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:43:09 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:43:09 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:43:09 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Women
+2024-07-20 15:43:09 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:43:10 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Tees
+2024-07-20 15:43:10 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Tees - Tops - Women
+2024-07-20 15:43:10 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/women/tops-women/tees-women.html
+2024-07-20 15:43:10 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:43:10 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Women, Tops, Bras &amp; Tanks, /women/tops-women/tanks-women.html](17)" classname="com.evy.tests.ProductDropdownTest" time="1.521">
+    <system-out><![CDATA[2024-07-20 15:43:10 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:43:11 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:43:13 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:43:13 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:43:13 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Women
+2024-07-20 15:43:13 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:43:14 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Bras & Tanks
+2024-07-20 15:43:14 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Bras & Tanks - Tops - Women
+2024-07-20 15:43:14 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/women/tops-women/tanks-women.html
+2024-07-20 15:43:14 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:43:14 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Women, Bottoms, Pants, /women/bottoms-women/pants-women.html](18)" classname="com.evy.tests.ProductDropdownTest" time="2.007">
+    <system-out><![CDATA[2024-07-20 15:43:15 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:43:15 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:43:17 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:43:17 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:43:18 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Women
+2024-07-20 15:43:18 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Bottoms
+2024-07-20 15:43:19 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Pants
+2024-07-20 15:43:19 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Pants - Bottoms - Women
+2024-07-20 15:43:19 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/women/bottoms-women/pants-women.html
+2024-07-20 15:43:19 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:43:19 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Women, Bottoms, Shorts, /women/bottoms-women/shorts-women.html](19)" classname="com.evy.tests.ProductDropdownTest" time="2.525">
+    <system-out><![CDATA[2024-07-20 15:43:19 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:43:20 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:43:22 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:43:22 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:43:22 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Women
+2024-07-20 15:43:22 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Bottoms
+2024-07-20 15:43:24 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Shorts
+2024-07-20 15:43:24 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Shorts - Bottoms - Women
+2024-07-20 15:43:24 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/women/bottoms-women/shorts-women.html
+2024-07-20 15:43:24 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:43:24 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Men, Tops, Jackets, /men/tops-men/jackets-men.html](20)" classname="com.evy.tests.ProductDropdownTest" time="1.426">
+    <system-out><![CDATA[2024-07-20 15:43:24 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:43:25 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:43:28 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:43:28 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:43:28 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:43:28 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:43:29 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:43:29 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:43:29 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/men/tops-men/jackets-men.html
+2024-07-20 15:43:29 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:43:29 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Men, Tops, Hoodies &amp; Sweatshirts, /men/tops-men/hoodies-and-sweatshirts-men.html](21)" classname="com.evy.tests.ProductDropdownTest" time="1.404">
+    <system-out><![CDATA[2024-07-20 15:43:29 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:43:30 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:43:32 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:43:32 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:43:32 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:43:33 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:43:33 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Hoodies & Sweatshirts
+2024-07-20 15:43:34 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Hoodies & Sweatshirts - Tops - Men
+2024-07-20 15:43:34 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/men/tops-men/hoodies-and-sweatshirts-men.html
+2024-07-20 15:43:34 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:43:34 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Men, Tops, Tees, /men/tops-men/tees-men.html](22)" classname="com.evy.tests.ProductDropdownTest" time="1.742">
+    <system-out><![CDATA[2024-07-20 15:43:34 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:43:34 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:43:37 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:43:37 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:43:37 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:43:37 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:43:38 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Tees
+2024-07-20 15:43:38 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Tees - Tops - Men
+2024-07-20 15:43:39 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/men/tops-men/tees-men.html
+2024-07-20 15:43:39 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:43:39 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Men, Tops, Tanks, /men/tops-men/tanks-men.html](23)" classname="com.evy.tests.ProductDropdownTest" time="1.142">
+    <system-out><![CDATA[2024-07-20 15:43:39 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:43:40 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:43:42 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:43:42 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:43:42 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:43:43 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:43:43 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Tanks
+2024-07-20 15:43:43 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Tanks - Tops - Men
+2024-07-20 15:43:43 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/men/tops-men/tanks-men.html
+2024-07-20 15:43:43 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:43:43 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Men, Bottoms, Pants, /men/bottoms-men/pants-men.html](24)" classname="com.evy.tests.ProductDropdownTest" time="1.306">
+    <system-out><![CDATA[2024-07-20 15:43:44 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:43:44 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:43:46 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:43:46 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:43:47 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:43:47 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Bottoms
+2024-07-20 15:43:47 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Pants
+2024-07-20 15:43:48 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Pants - Bottoms - Men
+2024-07-20 15:43:48 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/men/bottoms-men/pants-men.html
+2024-07-20 15:43:48 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:43:48 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectCategoriesFromProductDropdown[Men, Bottoms, Shorts, /men/bottoms-men/shorts-men.html](25)" classname="com.evy.tests.ProductDropdownTest" time="1.162">
+    <system-out><![CDATA[2024-07-20 15:43:48 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:43:48 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:43:51 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:43:51 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:43:51 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:43:51 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Bottoms
+2024-07-20 15:43:52 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Shorts
+2024-07-20 15:43:52 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Shorts - Bottoms - Men
+2024-07-20 15:43:52 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Retrieve current url: https://magento.softwaretestingboard.com/men/bottoms-men/shorts-men.html
+2024-07-20 15:43:52 [TestNG-test-automated-ui-3] INFO  com.evy.framework.utils.AssertionUtils - Verify that actualUrl contains expectedUrl: passed
+2024-07-20 15:43:52 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectCategoriesFromProductDropdownTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectProduct[Men, Tops, Jackets, Proteus Fitness Jackshirt, Proteus Fitness Jackshirt](1)" classname="com.evy.tests.ProductSearchResultTest" time="3.526">
+    <system-out><![CDATA[2024-07-20 15:42:04 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:04 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:04 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to confirmation:Password123
+2024-07-20 15:42:04 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:04 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:04 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:04 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:04 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:04 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:04 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:05 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:05 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt
+2024-07-20 15:42:05 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Proteus Fitness Jackshirt
+2024-07-20 15:42:05 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - Clicked on loginBtn
+2024-07-20 15:42:05 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt,Navigate to+ProductPage
+2024-07-20 15:42:05 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt
+2024-07-20 15:42:05 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt
+2024-07-20 15:42:05 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Proteus Fitness Jackshirt
+2024-07-20 15:42:05 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt,Navigate to+ProductPage
+2024-07-20 15:42:05 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Proteus Fitness Jackshirt
+2024-07-20 15:42:05 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt,Navigate to+ProductPage
+2024-07-20 15:42:05 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Send keys to productQuantity:1
+2024-07-20 15:42:05 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Clicked on Black
+2024-07-20 15:42:05 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Clicked on M
+2024-07-20 15:42:05 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Clicked on XS
+2024-07-20 15:42:05 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Clicked on Black
+2024-07-20 15:42:05 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Clicked on addToCartBtn
+2024-07-20 15:42:05 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Clicked on M
+2024-07-20 15:42:05 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Send keys to productQuantity:1
+2024-07-20 15:42:05 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Clicked on Black
+2024-07-20 15:42:05 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Clicked on addToCartBtn
+2024-07-20 15:42:05 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Send keys to productQuantity:1
+2024-07-20 15:42:05 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Clicked on addToCartBtn
+2024-07-20 15:42:06 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt
+2024-07-20 15:42:06 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Proteus Fitness Jackshirt
+2024-07-20 15:42:06 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt,Navigate to+ProductPage
+2024-07-20 15:42:06 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductPage - Retrieve PageTitle: Proteus Fitness Jackshirt
+2024-07-20 15:42:06 [TestNG-test-automated-ui-4] INFO  com.evy.framework.utils.AssertionUtils - Verify actualPageTitle Equals to expectedUrl: passed
+2024-07-20 15:42:06 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectProductTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectProduct[Men, Tops, Jackets, Montana Wind Jacket, Montana Wind Jacket](2)" classname="com.evy.tests.ProductSearchResultTest" time="1.067">
+    <system-out><![CDATA[2024-07-20 15:42:13 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductPage - Retrieve PageTitle: Montana Wind Jacket
+2024-07-20 15:42:13 [TestNG-test-automated-ui-4] INFO  com.evy.framework.utils.AssertionUtils - Verify actualPageTitle Equals to expectedUrl: passed
+2024-07-20 15:42:13 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectProductTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectProduct[Men, Tops, Jackets, Jupiter All-Weather Trainer, Jupiter All-Weather Trainer](3)" classname="com.evy.tests.ProductSearchResultTest" time="1.708">
+    <system-out><![CDATA[2024-07-20 15:42:20 [TestNG-test-automated-ui-7] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:20 [TestNG-test-automated-ui-1] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:20 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on loginLink
+2024-07-20 15:42:21 [TestNG-test-automated-ui-7] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:21 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Jupiter All-Weather Trainer
+2024-07-20 15:42:21 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt
+2024-07-20 15:42:21 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Page Title :Customer Login
+2024-07-20 15:42:21 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on loginLink,Navigate to+LoginPage
+2024-07-20 15:42:21 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Jupiter All-Weather Trainer
+2024-07-20 15:42:21 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Jupiter All-Weather Trainer,Navigate to+ProductPage
+2024-07-20 15:42:21 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Proteus Fitness Jackshirt
+2024-07-20 15:42:21 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt,Navigate to+ProductPage
+2024-07-20 15:42:21 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductPage - Retrieve PageTitle: Jupiter All-Weather Trainer
+2024-07-20 15:42:21 [TestNG-test-automated-ui-4] INFO  com.evy.framework.utils.AssertionUtils - Verify actualPageTitle Equals to expectedUrl: passed
+2024-07-20 15:42:21 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectProductTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectProduct[Men, Tops, Jackets, Typhon Performance Fleece-lined Jacket, Typhon Performance Fleece-lined Jacket](4)" classname="com.evy.tests.ProductSearchResultTest" time="2.639">
+    <system-out><![CDATA[2024-07-20 15:42:27 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:27 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Typhon Performance Fleece-lined Jacket
+2024-07-20 15:42:28 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Typhon Performance Fleece-lined Jacket
+2024-07-20 15:42:28 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Typhon Performance Fleece-lined Jacket,Navigate to+ProductPage
+2024-07-20 15:42:28 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductPage - Retrieve PageTitle: Typhon Performance Fleece-lined Jacket
+2024-07-20 15:42:28 [TestNG-test-automated-ui-4] INFO  com.evy.framework.utils.AssertionUtils - Verify actualPageTitle Equals to expectedUrl: passed
+2024-07-20 15:42:28 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectProductTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectProduct[Men, Tops, Jackets, Mars HeatTech™ Pullover, Mars HeatTech™ Pullover](5)" classname="com.evy.tests.ProductSearchResultTest" time="1.471">
+    <system-out><![CDATA[2024-07-20 15:42:34 [TestNG-test-automated-ui-1] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:34 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt
+2024-07-20 15:42:34 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Mars HeatTech™ Pullover
+2024-07-20 15:42:34 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Proteus Fitness Jackshirt
+2024-07-20 15:42:34 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt,Navigate to+ProductPage
+2024-07-20 15:42:34 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Mars HeatTech™ Pullover
+2024-07-20 15:42:34 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Mars HeatTech™ Pullover,Navigate to+ProductPage
+2024-07-20 15:42:34 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductPage - Retrieve PageTitle: Mars HeatTech™ Pullover
+2024-07-20 15:42:34 [TestNG-test-automated-ui-4] INFO  com.evy.framework.utils.AssertionUtils - Verify actualPageTitle Equals to expectedUrl: passed
+2024-07-20 15:42:34 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectProductTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectProduct[Men, Tops, Jackets, Taurus Elements Shell, Taurus Elements Shell](6)" classname="com.evy.tests.ProductSearchResultTest" time="1.038">
+    <system-out><![CDATA[2024-07-20 15:42:39 [TestNG-test-automated-ui-1] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:40 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on registerLink
+2024-07-20 15:42:40 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Page Title :Create New Customer Account
+2024-07-20 15:42:40 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on registerLink,Navigate to+RegisterPage
+2024-07-20 15:42:40 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Taurus Elements Shell
+2024-07-20 15:42:40 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:40 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Taurus Elements Shell
+2024-07-20 15:42:40 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Taurus Elements Shell,Navigate to+ProductPage
+2024-07-20 15:42:40 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to firstName:John
+2024-07-20 15:42:40 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on loginLink
+2024-07-20 15:42:40 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Page Title :Customer Login
+2024-07-20 15:42:40 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on loginLink,Navigate to+LoginPage
+2024-07-20 15:42:40 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductPage - Retrieve PageTitle: Taurus Elements Shell
+2024-07-20 15:42:40 [TestNG-test-automated-ui-4] INFO  com.evy.framework.utils.AssertionUtils - Verify actualPageTitle Equals to expectedUrl: passed
+2024-07-20 15:42:40 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectProductTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectProduct[Men, Tops, Jackets, Lando Gym Jacket, Lando Gym Jacket](7)" classname="com.evy.tests.ProductSearchResultTest" time="1.088">
+    <system-out><![CDATA[2024-07-20 15:42:45 [TestNG-test-automated-ui-7] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:45 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:45 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:45 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:45 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:42:45 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Clicked on cart view btn
+2024-07-20 15:42:45 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.authentication.RegisterPage - Clicked on registerBtn
+2024-07-20 15:42:45 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.authentication.RegisterPage - Page Title :My Account
+2024-07-20 15:42:45 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.authentication.RegisterPage - Clicked on registerBtn,Navigate to+MyAccountPage
+2024-07-20 15:42:45 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Page Title :Shopping Cart
+2024-07-20 15:42:45 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Gear
+2024-07-20 15:42:45 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:45 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:46 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Bags
+2024-07-20 15:42:46 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Bags - Gear
+2024-07-20 15:42:46 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Lando Gym Jacket
+2024-07-20 15:42:46 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Lando Gym Jacket
+2024-07-20 15:42:46 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Lando Gym Jacket,Navigate to+ProductPage
+2024-07-20 15:42:46 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductPage - Retrieve PageTitle: Lando Gym Jacket
+2024-07-20 15:42:46 [TestNG-test-automated-ui-4] INFO  com.evy.framework.utils.AssertionUtils - Verify actualPageTitle Equals to expectedUrl: passed
+2024-07-20 15:42:46 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectProductTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectProduct[Men, Tops, Jackets, Orion Two-Tone Fitted Jacket, Orion Two-Tone Fitted Jacket](8)" classname="com.evy.tests.ProductSearchResultTest" time="2.331">
+    <system-out><![CDATA[2024-07-20 15:42:50 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Verify success message is displayed after adding to cart
+2024-07-20 15:42:50 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:50 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Clicked on cart button
+2024-07-20 15:42:51 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:51 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Orion Two-Tone Fitted Jacket
+2024-07-20 15:42:51 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Orion Two-Tone Fitted Jacket
+2024-07-20 15:42:51 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Orion Two-Tone Fitted Jacket,Navigate to+ProductPage
+2024-07-20 15:42:51 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductPage - Retrieve PageTitle: Orion Two-Tone Fitted Jacket
+2024-07-20 15:42:51 [TestNG-test-automated-ui-4] INFO  com.evy.framework.utils.AssertionUtils - Verify actualPageTitle Equals to expectedUrl: passed
+2024-07-20 15:42:51 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectProductTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectProduct[Men, Tops, Jackets, Kenobi Trail Jacket, Kenobi Trail Jacket](9)" classname="com.evy.tests.ProductSearchResultTest" time="2.889">
+    <system-out><![CDATA[2024-07-20 15:42:54 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:54 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:55 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:55 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.checkout.CheckoutPage - Send keys to firstName:John
+2024-07-20 15:42:55 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:55 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.checkout.CheckoutPage - Selected Israel from country dropdown
+2024-07-20 15:42:55 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:55 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.checkout.CheckoutPage - Send keys to lastName:Doe
+2024-07-20 15:42:55 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.checkout.CheckoutPage - Send keys to address:123 Main St
+2024-07-20 15:42:56 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.checkout.CheckoutPage - Send keys to city:Tel Aviv
+2024-07-20 15:42:56 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.checkout.CheckoutPage - Send keys to postCode:12345
+2024-07-20 15:42:56 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.checkout.CheckoutPage - Clicked on flat rate shipment method
+2024-07-20 15:42:56 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.checkout.CheckoutPage - Send keys to telephone:0501234567
+2024-07-20 15:42:56 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.checkout.CheckoutPage - Clicked on nextButton
+2024-07-20 15:42:56 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Kenobi Trail Jacket
+2024-07-20 15:42:56 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Kenobi Trail Jacket
+2024-07-20 15:42:56 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Kenobi Trail Jacket,Navigate to+ProductPage
+2024-07-20 15:42:56 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductPage - Retrieve PageTitle: Kenobi Trail Jacket
+2024-07-20 15:42:56 [TestNG-test-automated-ui-4] INFO  com.evy.framework.utils.AssertionUtils - Verify actualPageTitle Equals to expectedUrl: passed
+2024-07-20 15:42:56 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectProductTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectProduct[Men, Tops, Jackets, Hyperion Elements Jacket, Hyperion Elements Jacket](10)" classname="com.evy.tests.ProductSearchResultTest" time="2.3">
+    <system-out><![CDATA[2024-07-20 15:43:02 [TestNG-test-automated-ui-6] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:43:02 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:43:02 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Hyperion Elements Jacket
+2024-07-20 15:43:02 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Hyperion Elements Jacket
+2024-07-20 15:43:02 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Hyperion Elements Jacket,Navigate to+ProductPage
+2024-07-20 15:43:02 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductPage - Retrieve PageTitle: Hyperion Elements Jacket
+2024-07-20 15:43:02 [TestNG-test-automated-ui-4] INFO  com.evy.framework.utils.AssertionUtils - Verify actualPageTitle Equals to expectedUrl: passed
+2024-07-20 15:43:02 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectProductTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSelectProduct[Men, Tops, Jackets, Beaumont Summit Kit, Beaumont Summit Kit](11)" classname="com.evy.tests.ProductSearchResultTest" time="2.509">
+    <system-out><![CDATA[2024-07-20 15:43:06 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:43:06 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:43:06 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:43:07 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:43:07 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Beaumont Summit Kit
+2024-07-20 15:43:07 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Beaumont Summit Kit
+2024-07-20 15:43:07 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Beaumont Summit Kit,Navigate to+ProductPage
+2024-07-20 15:43:08 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.product.ProductPage - Retrieve PageTitle: Beaumont Summit Kit
+2024-07-20 15:43:08 [TestNG-test-automated-ui-4] INFO  com.evy.framework.utils.AssertionUtils - Verify actualPageTitle Equals to expectedUrl: passed
+2024-07-20 15:43:08 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSelectProductTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserLoginScenarios[evyuser@example.com, Password123, valid login data](1)" classname="com.evy.tests.LoginTest" time="3.901">
+    <system-out><![CDATA[2024-07-20 15:42:06 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:06 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - success login message display Display status: true
+2024-07-20 15:42:06 [TestNG-test-automated-ui-2] INFO  com.evy.framework.utils.AssertionUtils - Verify login message display status: passed
+2024-07-20 15:42:06 [TestNG-test-automated-ui-2] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserLoginScenariosTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserLoginScenarios[wrongEmail@gmail.com, Password123, invalid login data](2)" classname="com.evy.tests.LoginTest" time="0.057">
+    <system-out><![CDATA[2024-07-20 15:42:14 [TestNG-test-automated-ui-5] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:14 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:14 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:14 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:14 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:14 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:14 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:14 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - Clicked on loginBtn
+2024-07-20 15:42:15 [TestNG-test-automated-ui-1] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:15 [TestNG-test-automated-ui-1] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserRegistrationScenariosTest Start
+2024-07-20 15:42:15 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - fail login message Display status: true
+2024-07-20 15:42:15 [TestNG-test-automated-ui-2] INFO  com.evy.framework.utils.AssertionUtils - Verify login message display status: passed
+2024-07-20 15:42:15 [TestNG-test-automated-ui-2] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserLoginScenariosTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserLoginScenarios[evyuser@example.com, wrongPassword, invalid login data](3)" classname="com.evy.tests.LoginTest" time="0.457">
+    <system-out><![CDATA[2024-07-20 15:42:23 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:23 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:23 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:23 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:23 [TestNG-test-automated-ui-1] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:23 [TestNG-test-automated-ui-1] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserRegistrationScenariosTest Start
+2024-07-20 15:42:23 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:23 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:24 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:24 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - Clicked on loginBtn
+2024-07-20 15:42:24 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:24 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:24 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:42:24 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt
+2024-07-20 15:42:24 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on registerLink
+2024-07-20 15:42:24 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Proteus Fitness Jackshirt
+2024-07-20 15:42:24 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt,Navigate to+ProductPage
+2024-07-20 15:42:24 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - fail login message Display status: true
+2024-07-20 15:42:24 [TestNG-test-automated-ui-2] INFO  com.evy.framework.utils.AssertionUtils - Verify login message display status: passed
+2024-07-20 15:42:24 [TestNG-test-automated-ui-2] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserLoginScenariosTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserLoginScenarios[, Password123, invalid missing data](4)" classname="com.evy.tests.LoginTest" time="1.237">
+    <system-out><![CDATA[2024-07-20 15:42:29 [TestNG-test-automated-ui-7] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:29 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:29 [TestNG-test-automated-ui-1] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:29 [TestNG-test-automated-ui-5] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:29 [TestNG-test-automated-ui-5] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSetProductColorTest Start
+2024-07-20 15:42:29 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:29 [TestNG-test-automated-ui-6] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:29 [TestNG-test-automated-ui-6] INFO  com.evy.framework.listener.ListenerManager - Test started: testAddProductToCartTest Start
+2024-07-20 15:42:29 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:29 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:29 [TestNG-test-automated-ui-7] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:30 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:30 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:30 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:42:30 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on loginLink
+2024-07-20 15:42:30 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Page Title :Customer Login
+2024-07-20 15:42:30 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on loginLink,Navigate to+LoginPage
+2024-07-20 15:42:30 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:30 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - Send keys to email:
+2024-07-20 15:42:30 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Women
+2024-07-20 15:42:30 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:31 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:31 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - Send keys to password:Password123
+2024-07-20 15:42:31 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - Clicked on loginBtn
+2024-07-20 15:42:31 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - invalid missing data message Display status: true
+2024-07-20 15:42:31 [TestNG-test-automated-ui-2] INFO  com.evy.framework.utils.AssertionUtils - Verify login message display status: passed
+2024-07-20 15:42:31 [TestNG-test-automated-ui-2] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserLoginScenariosTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserLoginScenarios[evy@user@example.com, , invalid missing data](5)" classname="com.evy.tests.LoginTest" time="0.432">
+    <system-out><![CDATA[2024-07-20 15:42:35 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on loginLink
+2024-07-20 15:42:35 [TestNG-test-automated-ui-5] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:35 [TestNG-test-automated-ui-6] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:35 [TestNG-test-automated-ui-1] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:35 [TestNG-test-automated-ui-1] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserRegistrationScenariosTest Start
+2024-07-20 15:42:35 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Page Title :Customer Login
+2024-07-20 15:42:35 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on loginLink,Navigate to+LoginPage
+2024-07-20 15:42:36 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - Send keys to email:evy@user@example.com
+2024-07-20 15:42:36 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:36 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:42:36 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - Send keys to password:
+2024-07-20 15:42:36 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - Clicked on loginBtn
+2024-07-20 15:42:36 [TestNG-test-automated-ui-3] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:36 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - invalid missing data message Display status: true
+2024-07-20 15:42:36 [TestNG-test-automated-ui-2] INFO  com.evy.framework.utils.AssertionUtils - Verify login message display status: passed
+2024-07-20 15:42:36 [TestNG-test-automated-ui-2] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserLoginScenariosTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserLoginScenarios[, , invalid missing data](6)" classname="com.evy.tests.LoginTest" time="0.505">
+    <system-out><![CDATA[2024-07-20 15:42:40 [TestNG-test-automated-ui-7] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:40 [TestNG-test-automated-ui-7] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSetProductSizeTest Start
+2024-07-20 15:42:40 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:40 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to lastName:Doe
+2024-07-20 15:42:40 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:41 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:41 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - Send keys to email:
+2024-07-20 15:42:41 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to email:randall.heaney@yahoo.com
+2024-07-20 15:42:41 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:41 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - Send keys to password:
+2024-07-20 15:42:41 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - Clicked on loginBtn
+2024-07-20 15:42:41 [TestNG-test-automated-ui-2] INFO  com.evy.framework.pages.authentication.LoginPage - invalid missing data message Display status: true
+2024-07-20 15:42:41 [TestNG-test-automated-ui-2] INFO  com.evy.framework.utils.AssertionUtils - Verify login message display status: passed
+2024-07-20 15:42:41 [TestNG-test-automated-ui-2] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserLoginScenariosTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSetProductQuantity[1, valid quantity, You added](1)" classname="com.evy.tests.ProductTest" time="1.781">
+    <system-out><![CDATA[2024-07-20 15:42:08 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:09 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Retrieve text from add to cart success message:You added Proteus Fitness Jackshirt to your shopping cart.
+2024-07-20 15:42:09 [TestNG-test-automated-ui-6] INFO  com.evy.framework.utils.AssertionUtils - Verify if actualMsg Contains to ExpectedMsg: passed
+2024-07-20 15:42:09 [TestNG-test-automated-ui-6] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSetProductQuantityTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSetProductSize[XS, You added](1)" classname="com.evy.tests.ProductTest" time="1.798">
+    <system-out><![CDATA[2024-07-20 15:42:09 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Retrieve text from add to cart success message:You added Proteus Fitness Jackshirt to your shopping cart.
+2024-07-20 15:42:09 [TestNG-test-automated-ui-7] INFO  com.evy.framework.utils.AssertionUtils - Verify if actualResponseMsg Equals to expectedResponseMsg: passed
+2024-07-20 15:42:09 [TestNG-test-automated-ui-7] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSetProductSizeTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSetProductColor[Black, You added](1)" classname="com.evy.tests.ProductTest" time="1.628">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[data-bind*=&apos;message.text&apos;]&quot;}&#10;  (Session info: chrome-headless-shell=126.0.6478.183)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5f5e44bcb616f58449b883231d45e9c5, findElement {value=div[data-bind*=&apos;message.text&apos;], using=css selector}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\evyco\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54711}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54711/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5f5e44bcb616f58449b883231d45e9c5" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"div[data-bind*='message.text']"}
+  (Session info: chrome-headless-shell=126.0.6478.183)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f5e44bcb616f58449b883231d45e9c5, findElement {value=div[data-bind*='message.text'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\evyco\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54711}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54711/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f5e44bcb616f58449b883231d45e9c5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy58.getText(Unknown Source)
+	at com.evy.framework.pages.BasePage.getText(BasePage.java:53)
+	at com.evy.framework.pages.product.ProductPage.getSuccessAddToCartMsg(ProductPage.java:84)
+	at com.evy.tests.ProductTest.setProductColor(ProductTest.java:132)
+	at com.evy.tests.ProductTest.testUserSetProductColor(ProductTest.java:73)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+    <system-out><![CDATA[2024-07-20 15:42:13 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:13 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:13 [TestNG-test-automated-ui-5] ERROR com.evy.framework.listener.ListenerManager - Test failed: testUserSetProductColorTest Failure
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSetProductQuantity[0, invalid quantity, Please enter a quantity greater than 0.](2)" classname="com.evy.tests.ProductTest" time="0.303">
+    <system-out><![CDATA[2024-07-20 15:42:15 [TestNG-test-automated-ui-2] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:15 [TestNG-test-automated-ui-5] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:16 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt
+2024-07-20 15:42:16 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:16 [TestNG-test-automated-ui-3] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectCategoriesFromProductDropdownTest Start
+2024-07-20 15:42:16 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on registerLink
+2024-07-20 15:42:16 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt
+2024-07-20 15:42:16 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Page Title :Create New Customer Account
+2024-07-20 15:42:16 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on registerLink,Navigate to+RegisterPage
+2024-07-20 15:42:16 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Proteus Fitness Jackshirt
+2024-07-20 15:42:16 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt,Navigate to+ProductPage
+2024-07-20 15:42:16 [TestNG-test-automated-ui-2] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:16 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Proteus Fitness Jackshirt
+2024-07-20 15:42:16 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt,Navigate to+ProductPage
+2024-07-20 15:42:17 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Clicked on Black
+2024-07-20 15:42:17 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to firstName:Tammy
+2024-07-20 15:42:17 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Clicked on M
+2024-07-20 15:42:17 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Send keys to productQuantity:1
+2024-07-20 15:42:17 [TestNG-test-automated-ui-5] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:17 [TestNG-test-automated-ui-5] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSetProductColorTest Start
+2024-07-20 15:42:17 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Clicked on Black
+2024-07-20 15:42:17 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to lastName:Gutmann
+2024-07-20 15:42:17 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Send keys to productQuantity:0
+2024-07-20 15:42:17 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Clicked on S
+2024-07-20 15:42:17 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:17 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectProductTest Start
+2024-07-20 15:42:17 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Clicked on addToCartBtn
+2024-07-20 15:42:17 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Clicked on addToCartBtn
+2024-07-20 15:42:17 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to email:evy@
+2024-07-20 15:42:17 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:17 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Retrieve text from quantity error message:Please enter a quantity greater than 0.
+2024-07-20 15:42:17 [TestNG-test-automated-ui-6] INFO  com.evy.framework.utils.AssertionUtils - Verify if actualMsg Contains to ExpectedMsg: passed
+2024-07-20 15:42:17 [TestNG-test-automated-ui-6] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSetProductQuantityTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSetProductSize[S, You added](2)" classname="com.evy.tests.ProductTest" time="0.364">
+    <system-out><![CDATA[2024-07-20 15:42:19 [TestNG-test-automated-ui-6] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:19 [TestNG-test-automated-ui-1] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:19 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:19 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:19 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:19 [TestNG-test-automated-ui-2] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:19 [TestNG-test-automated-ui-2] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserLoginScenariosTest Start
+2024-07-20 15:42:19 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:20 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:20 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Retrieve text from add to cart success message:You added Proteus Fitness Jackshirt to your shopping cart.
+2024-07-20 15:42:20 [TestNG-test-automated-ui-7] INFO  com.evy.framework.utils.AssertionUtils - Verify if actualResponseMsg Equals to expectedResponseMsg: passed
+2024-07-20 15:42:20 [TestNG-test-automated-ui-7] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSetProductSizeTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSetProductQuantity[-1, invalid quantity, Please enter a quantity greater than 0.](3)" classname="com.evy.tests.ProductTest" time="0.462">
+    <system-out><![CDATA[2024-07-20 15:42:25 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Page Title :Create New Customer Account
+2024-07-20 15:42:25 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on registerLink,Navigate to+RegisterPage
+2024-07-20 15:42:25 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Clicked on Black
+2024-07-20 15:42:25 [TestNG-test-automated-ui-2] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:25 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Clicked on M
+2024-07-20 15:42:25 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:25 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to firstName:Rosemarie
+2024-07-20 15:42:25 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectProductTest Start
+2024-07-20 15:42:25 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Send keys to productQuantity:-1
+2024-07-20 15:42:25 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to lastName:Mueller
+2024-07-20 15:42:25 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt
+2024-07-20 15:42:25 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:25 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Clicked on addToCartBtn
+2024-07-20 15:42:25 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Proteus Fitness Jackshirt
+2024-07-20 15:42:25 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt,Navigate to+ProductPage
+2024-07-20 15:42:25 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Retrieve text from quantity error message:Please enter a quantity greater than 0.
+2024-07-20 15:42:25 [TestNG-test-automated-ui-6] INFO  com.evy.framework.utils.AssertionUtils - Verify if actualMsg Contains to ExpectedMsg: passed
+2024-07-20 15:42:25 [TestNG-test-automated-ui-6] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSetProductQuantityTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSetProductColor[Blue, You added](2)" classname="com.evy.tests.ProductTest" time="0.615">
+    <system-out><![CDATA[2024-07-20 15:42:25 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:26 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to email:evy@example.org
+2024-07-20 15:42:26 [TestNG-test-automated-ui-6] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:26 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Retrieve text from add to cart success message:You added Proteus Fitness Jackshirt to your shopping cart.
+2024-07-20 15:42:26 [TestNG-test-automated-ui-5] INFO  com.evy.framework.utils.AssertionUtils - Verify actualMsg contains expectedMsg: passed
+2024-07-20 15:42:26 [TestNG-test-automated-ui-5] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSetProductColorTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSetProductSize[M, You added](3)" classname="com.evy.tests.ProductTest" time="0.37">
+    <system-out><![CDATA[2024-07-20 15:42:28 [TestNG-test-automated-ui-1] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:28 [TestNG-test-automated-ui-2] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:28 [TestNG-test-automated-ui-2] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserLoginScenariosTest Start
+2024-07-20 15:42:29 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Retrieve text from add to cart success message:You added Proteus Fitness Jackshirt to your shopping cart.
+2024-07-20 15:42:29 [TestNG-test-automated-ui-7] INFO  com.evy.framework.utils.AssertionUtils - Verify if actualResponseMsg Equals to expectedResponseMsg: passed
+2024-07-20 15:42:29 [TestNG-test-automated-ui-7] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSetProductSizeTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSetProductColor[Orange, You added](3)" classname="com.evy.tests.ProductTest" time="2.482">
+    <system-out><![CDATA[2024-07-20 15:42:34 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:34 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Send keys to productQuantity:1
+2024-07-20 15:42:34 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Clicked on Black
+2024-07-20 15:42:34 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Clicked on L
+2024-07-20 15:42:34 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Clicked on addToCartBtn
+2024-07-20 15:42:34 [TestNG-test-automated-ui-1] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:35 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:35 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Retrieve text from add to cart success message:You added Proteus Fitness Jackshirt to your shopping cart.
+2024-07-20 15:42:35 [TestNG-test-automated-ui-5] INFO  com.evy.framework.utils.AssertionUtils - Verify actualMsg contains expectedMsg: passed
+2024-07-20 15:42:35 [TestNG-test-automated-ui-5] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSetProductColorTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSetProductSize[L, You added](4)" classname="com.evy.tests.ProductTest" time="0.891">
+    <system-out><![CDATA[2024-07-20 15:42:36 [TestNG-test-automated-ui-5] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:36 [TestNG-test-automated-ui-6] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:36 [TestNG-test-automated-ui-2] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:37 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Retrieve text from add to cart success message:You added Proteus Fitness Jackshirt to your shopping cart.
+2024-07-20 15:42:37 [TestNG-test-automated-ui-7] INFO  com.evy.framework.utils.AssertionUtils - Verify if actualResponseMsg Equals to expectedResponseMsg: passed
+2024-07-20 15:42:37 [TestNG-test-automated-ui-7] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSetProductSizeTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserSetProductSize[XL, You added](5)" classname="com.evy.tests.ProductTest" time="0.952">
+    <system-out><![CDATA[2024-07-20 15:42:42 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:42 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt
+2024-07-20 15:42:43 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Page Title :Proteus Fitness Jackshirt
+2024-07-20 15:42:43 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductSearchResultPage - Clicked on Proteus Fitness Jackshirt,Navigate to+ProductPage
+2024-07-20 15:42:43 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Send keys to productQuantity:1
+2024-07-20 15:42:43 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Clicked on Black
+2024-07-20 15:42:43 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Clicked on XL
+2024-07-20 15:42:43 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Clicked on addToCartBtn
+2024-07-20 15:42:43 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:43 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:43 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectProductTest Start
+2024-07-20 15:42:44 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Verify success message is displayed after adding to cart
+2024-07-20 15:42:44 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Clicked on cart button
+2024-07-20 15:42:44 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:44 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:44 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.product.ProductPage - Retrieve text from add to cart success message:You added Proteus Fitness Jackshirt to your shopping cart.
+2024-07-20 15:42:44 [TestNG-test-automated-ui-7] INFO  com.evy.framework.utils.AssertionUtils - Verify if actualResponseMsg Equals to expectedResponseMsg: passed
+2024-07-20 15:42:44 [TestNG-test-automated-ui-7] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserSetProductSizeTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserRegistrationScenarios[Cammy, King, mignon.blanda@yahoo.com, Password123, Password123, valid register data, Thank you for registering with Main Website Store.](1)" classname="com.evy.tests.RegisterTest" time="1.065">
+    <failure message="stale element reference: stale element not found in the current frame&#10;  (Session info: chrome-headless-shell=126.0.6478.183)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception&#10;Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [45646ed12118fc3e9cdf9a92c137b4ce, getElementText {id=f.D4C7F94356AC29DEED5C4FAD88AFC818.d.73F599FD2E9D7B864C6B3D134E7090E0.e.30}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\evyco\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54709}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54709/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome-headless-shell on windows (45646ed12118fc3e9cdf9a92c137b4ce)] -&gt; css selector: div[data-bind*=&apos;message.text&apos;]]&#10;Session ID: 45646ed12118fc3e9cdf9a92c137b4ce" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found in the current frame
+  (Session info: chrome-headless-shell=126.0.6478.183)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [45646ed12118fc3e9cdf9a92c137b4ce, getElementText {id=f.D4C7F94356AC29DEED5C4FAD88AFC818.d.73F599FD2E9D7B864C6B3D134E7090E0.e.30}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\evyco\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54709}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54709/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome-headless-shell on windows (45646ed12118fc3e9cdf9a92c137b4ce)] -> css selector: div[data-bind*='message.text']]
+Session ID: 45646ed12118fc3e9cdf9a92c137b4ce
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy58.getText(Unknown Source)
+	at com.evy.framework.pages.BasePage.getText(BasePage.java:53)
+	at com.evy.framework.pages.authentication.RegisterPage.getRegisterResponseMsg(RegisterPage.java:57)
+	at com.evy.tests.RegisterTest.registerAndGetResponseMsg(RegisterTest.java:64)
+	at com.evy.tests.RegisterTest.testUserRegistrationScenarios(RegisterTest.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+    <system-out><![CDATA[2024-07-20 15:42:09 [TestNG-test-automated-ui-7] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:09 [TestNG-test-automated-ui-6] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:09 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:09 [TestNG-test-automated-ui-2] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:09 [TestNG-test-automated-ui-2] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserLoginScenariosTest Start
+2024-07-20 15:42:10 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:10 [TestNG-test-automated-ui-4] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserSelectProductTest Start
+2024-07-20 15:42:10 [TestNG-test-automated-ui-6] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:10 [TestNG-test-automated-ui-7] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:10 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:10 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:10 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Clicked on registerBtn
+2024-07-20 15:42:10 [TestNG-test-automated-ui-1] ERROR com.evy.framework.listener.ListenerManager - Test failed: testUserRegistrationScenariosTest Failure
+]]></system-out>
+  </testcase>
+  <testcase name="testUserRegistrationScenarios[Tammy, Gutmann, evy@, Password123, Password123, invalid email format data, Please enter a valid email address (Ex: johndoe@domain.com).](2)" classname="com.evy.tests.RegisterTest" time="1.45">
+    <system-out><![CDATA[2024-07-20 15:42:18 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to password:Password123
+2024-07-20 15:42:18 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:18 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:18 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to confirmation:Password123
+2024-07-20 15:42:18 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:18 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Clicked on registerBtn
+2024-07-20 15:42:19 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Retrieve text from invalid email format message:Please enter a valid email address (Ex: johndoe@domain.com).
+2024-07-20 15:42:19 [TestNG-test-automated-ui-1] INFO  com.evy.framework.utils.AssertionUtils - Verify actualRegistration MessageEquals to the expectedMessage: passed
+2024-07-20 15:42:19 [TestNG-test-automated-ui-1] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserRegistrationScenariosTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserRegistrationScenarios[Rosemarie, Mueller, evy@example.org, Password123, Password123, invalid email in use data, There is already an account with this email address. If you are sure that it is your email address, click here to get your password and access your account.](3)" classname="com.evy.tests.RegisterTest" time="3.015">
+    <system-out><![CDATA[2024-07-20 15:42:28 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Clicked on registerBtn
+2024-07-20 15:42:28 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:28 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:28 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Retrieve text from invalid email in use message:There is already an account with this email address. If you are sure that it is your email address, click here to get your password and access your account.
+2024-07-20 15:42:28 [TestNG-test-automated-ui-1] INFO  com.evy.framework.utils.AssertionUtils - Verify actualRegistration MessageEquals to the expectedMessage: passed
+2024-07-20 15:42:28 [TestNG-test-automated-ui-1] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserRegistrationScenariosTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserRegistrationScenarios[Annamaria, Koepp, mario.mayert@yahoo.com, Password, Password, invalid passwords format data, Minimum of different classes of characters in password is 3. Classes of characters: Lower Case, Upper Case, Digits, Special Characters.](4)" classname="com.evy.tests.RegisterTest" time="1.112">
+    <system-out><![CDATA[2024-07-20 15:42:32 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Clicked on Black
+2024-07-20 15:42:32 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on registerLink
+2024-07-20 15:42:32 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:32 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Page Title :Create New Customer Account
+2024-07-20 15:42:32 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on registerLink,Navigate to+RegisterPage
+2024-07-20 15:42:33 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:33 [TestNG-test-automated-ui-2] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:33 [TestNG-test-automated-ui-2] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserLoginScenariosTest Start
+2024-07-20 15:42:33 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Send keys to productQuantity:1
+2024-07-20 15:42:33 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:33 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Send keys to productQuantity:1
+2024-07-20 15:42:33 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Clicked on Orange
+2024-07-20 15:42:33 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:33 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Clicked on M
+2024-07-20 15:42:33 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to firstName:Annamaria
+2024-07-20 15:42:33 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.product.ProductPage - Clicked on addToCartBtn
+2024-07-20 15:42:33 [TestNG-test-automated-ui-7] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:33 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Clicked on addToCartBtn
+2024-07-20 15:42:33 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to lastName:Koepp
+2024-07-20 15:42:33 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to email:mario.mayert@yahoo.com
+2024-07-20 15:42:33 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to password:Password
+2024-07-20 15:42:33 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:34 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to confirmation:Password
+2024-07-20 15:42:34 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Clicked on registerBtn
+2024-07-20 15:42:34 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Retrieve text from invalid passwords format message:Minimum of different classes of characters in password is 3. Classes of characters: Lower Case, Upper Case, Digits, Special Characters.
+2024-07-20 15:42:34 [TestNG-test-automated-ui-1] INFO  com.evy.framework.utils.AssertionUtils - Verify actualRegistration MessageEquals to the expectedMessage: passed
+2024-07-20 15:42:34 [TestNG-test-automated-ui-1] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserRegistrationScenariosTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserRegistrationScenarios[Maurice, Parisian, stan.dooley@gmail.com, password1, password2, invalid passwords mismatch data, Please enter the same value again.](5)" classname="com.evy.tests.RegisterTest" time="0.07">
+    <system-out><![CDATA[2024-07-20 15:42:38 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:38 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:38 [TestNG-test-automated-ui-7] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:38 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on registerLink
+2024-07-20 15:42:38 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Page Title :Create New Customer Account
+2024-07-20 15:42:38 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.home.NavigateToAuthentication - Clicked on registerLink,Navigate to+RegisterPage
+2024-07-20 15:42:38 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to firstName:Maurice
+2024-07-20 15:42:39 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to lastName:Parisian
+2024-07-20 15:42:39 [TestNG-test-automated-ui-5] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:39 [TestNG-test-automated-ui-5] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserDeleteProductFromCartTest Start
+2024-07-20 15:42:39 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:39 [TestNG-test-automated-ui-6] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:39 [TestNG-test-automated-ui-6] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserEnd2EndJourneyTest Start
+2024-07-20 15:42:39 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to email:stan.dooley@gmail.com
+2024-07-20 15:42:39 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Men
+2024-07-20 15:42:39 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:39 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to password:password1
+2024-07-20 15:42:39 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Moved to Tops
+2024-07-20 15:42:39 [TestNG-test-automated-ui-4] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:39 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Send keys to confirmation:password2
+2024-07-20 15:42:39 [TestNG-test-automated-ui-2] INFO  com.evy.framework.drivers.Driver - Driver initialization successful
+2024-07-20 15:42:39 [TestNG-test-automated-ui-2] INFO  com.evy.framework.listener.ListenerManager - Test started: testUserLoginScenariosTest Start
+2024-07-20 15:42:39 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Clicked on registerBtn
+2024-07-20 15:42:39 [TestNG-test-automated-ui-1] INFO  com.evy.framework.pages.authentication.RegisterPage - Retrieve text from invalid mismatch passwords message:Please enter the same value again.
+2024-07-20 15:42:39 [TestNG-test-automated-ui-1] INFO  com.evy.framework.utils.AssertionUtils - Verify actualRegistration MessageEquals to the expectedMessage: passed
+2024-07-20 15:42:39 [TestNG-test-automated-ui-1] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserRegistrationScenariosTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testAddProductToCart" classname="com.evy.tests.CartTest" time="2.531">
+    <system-out><![CDATA[2024-07-20 15:42:35 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.product.ProductPage - Retrieve text from add to cart success message:You added Proteus Fitness Jackshirt to your shopping cart.
+2024-07-20 15:42:35 [TestNG-test-automated-ui-6] INFO  com.evy.framework.utils.AssertionUtils - Verify if actualMessage is equals to expectedMsg: passed
+2024-07-20 15:42:35 [TestNG-test-automated-ui-6] INFO  com.evy.framework.listener.ListenerManager - Test passed: testAddProductToCartTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserDeleteProductFromCart" classname="com.evy.tests.CartTest" time="2.244">
+    <system-out><![CDATA[2024-07-20 15:42:46 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:46 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:42:46 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Clicked on Jackets
+2024-07-20 15:42:47 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.home.NavigateToProductDropdown - Page Title :Jackets - Tops - Men
+2024-07-20 15:42:47 [TestNG-test-automated-ui-4] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:47 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.checkout.CartPage - Clicked on delete product from cart
+2024-07-20 15:42:47 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.DriverFactory - Launch Browser: CHROME
+2024-07-20 15:42:47 [TestNG-test-automated-ui-5] INFO  com.evy.framework.pages.checkout.CartPage - Retrieve text from delete product from cart message:You have no items in your shopping cart.
+2024-07-20 15:42:47 [TestNG-test-automated-ui-5] INFO  com.evy.framework.utils.AssertionUtils - Verify delete product from cart response message: passed
+2024-07-20 15:42:47 [TestNG-test-automated-ui-5] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserDeleteProductFromCartTest Success
+]]></system-out>
+  </testcase>
+  <testcase name="testUserEnd2EndJourney[John, Doe, randall.heaney@yahoo.com, Password123, Israel, 123 Main St, Tel Aviv, 12345, 0501234567](1)" classname="com.evy.tests.EndToEndTest" time="1.622">
+    <system-out><![CDATA[2024-07-20 15:43:01 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.checkout.PaymentPage - Page Title :Success Page
+2024-07-20 15:43:01 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.checkout.PaymentPage - Clicked on placeOrderBtn,Navigate to+SuccessPage
+2024-07-20 15:43:01 [TestNG-test-automated-ui-3] INFO  com.evy.framework.drivers.Driver - Quit Driver
+2024-07-20 15:43:02 [TestNG-test-automated-ui-6] INFO  com.evy.framework.pages.checkout.SuccessPage - Retrieve text from success order message:Thank you for your purchase!
+2024-07-20 15:43:02 [TestNG-test-automated-ui-6] INFO  com.evy.framework.utils.AssertionUtils - Verify success end-to-end product purchase message: passed
+2024-07-20 15:43:02 [TestNG-test-automated-ui-6] INFO  com.evy.framework.listener.ListenerManager - Test passed: testUserEnd2EndJourneyTest Success
+]]></system-out>
+  </testcase>
+</testsuite>

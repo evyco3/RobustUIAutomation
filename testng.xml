@@ -4,7 +4,7 @@
     <listeners>
         <listener class-name="com.evy.framework.listener.ListenerManager"/>
     </listeners>
-    <test name="automated-ui" parallel="methods" thread-count="2">
+    <test name="automated-ui" parallel="methods" thread-count="7">
         <classes>
             <class name="com.evy.tests.RegisterTest"/>
             <class name="com.evy.tests.LoginTest"/>

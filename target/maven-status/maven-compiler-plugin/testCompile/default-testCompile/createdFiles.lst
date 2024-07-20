@@ -1,0 +1,8 @@
+com\evy\tests\EndToEndTest.class
+com\evy\tests\ProductSearchResultTest.class
+com\evy\tests\LoginTest.class
+com\evy\tests\CartTest.class
+com\evy\tests\BaseTest.class
+com\evy\tests\ProductDropdownTest.class
+com\evy\tests\ProductTest.class
+com\evy\tests\RegisterTest.class
