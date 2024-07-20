@@ -62,7 +62,8 @@ public final class DriverFactory {
     public static final class ChromeDriverSupplier implements DriverSupplier {
         @Override
         public WebDriver getDriver() {
-           WebDriverManager.chromedriver().setup();
+            WebDriverManager.chromedriver().clearDriverCache().setup();
+            WebDriverManager.chromedriver().clearResolutionCache().setup();
            ChromeOptions options=new ChromeOptions();
             options.addArguments("--headless");
             options.addArguments("--no-sandbox");
